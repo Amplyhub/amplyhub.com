@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Amply — Amplifie chaque son</title>
+<title>Amply : Amplifie chaque son</title>
 <meta name="description" content="Amply connecte les auditeurs, les créateurs et les marques dans un écosystème audio unique. Gagne des Amps en écoutant, propulse ton son."/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
@@ -97,6 +98,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(15,5,25,.9);
 .ph-rn{font-family:'Poppins',sans-serif;font-size:10px;font-weight:700;color:var(--t)}
 .ph-rs{font-family:'Poppins',sans-serif;font-size:8px;color:var(--m);margin-top:1px}
 .ph-rb{flex-shrink:0;font-family:'Poppins',sans-serif;font-size:8px;font-weight:700;color:var(--o);background:rgba(255,107,79,.1);border-radius:6px;padding:3px 7px;white-space:nowrap}
+/* AMPLY BRAND WAVE — scaleY animation preserves shape integrity */
 .amply-wave{height:40px;display:flex;align-items:flex-end;justify-content:center;gap:4px;padding:0 4px;overflow:visible}
 .aw{width:8px;flex-shrink:0;border-radius:0 50% 0 50%;transform-origin:bottom center;animation:awa 1s ease-in-out infinite alternate}
 .aw-grad{background:linear-gradient(180deg,#EDA1F0 0%,#FF6B4F 100%)}
@@ -152,12 +154,13 @@ section{padding:96px 40px}
 #app{background:var(--bg)}
 .scr-g{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .scr-card{background:var(--card);border:1px solid var(--b1);border-radius:var(--r);overflow:hidden;text-align:left}
-.scr-img-wrap{background:linear-gradient(180deg,#1a0a15 0%,var(--bg) 100%);display:flex;justify-content:center;align-items:flex-end;height:280px;overflow:hidden;border-bottom:1px solid var(--b1)}
+.scr-img-wrap{background:linear-gradient(180deg,#1a0a15 0%,var(--bg) 100%);display:flex;justify-content:center;align-items:flex-start;height:280px;overflow:hidden;border-bottom:1px solid var(--b1)}
 .scr-img{width:62%;height:auto;display:block;object-fit:contain;object-position:top center;filter:drop-shadow(0 8px 24px rgba(0,0,0,.4))}
 .scr-n{font-family:'Poppins',sans-serif;font-size:9px;font-weight:700;color:var(--sub);text-transform:uppercase;letter-spacing:.1em;margin-bottom:5px}
 .scr-info{padding:14px 18px 18px}
-.scr-card h3{font-family:'Poppins',sans-serif;font-size:14px;font-weight:800;margin-bottom:5px}
+.scr-card h3{font-family:'Poppins',sans-serif;font-size:20px;font-weight:800;margin-bottom:6px}
 .scr-card p{font-family:'Poppins',sans-serif;font-size:12px;color:var(--m);line-height:1.6}
+/* mini phone screens */
 .mp{background:var(--s2);border-bottom:1px solid var(--b1)}
 .mp-hd{background:var(--p);padding:8px 13px 7px;display:flex;align-items:center;justify-content:space-between}
 .mp-logo-txt{font-family:'Poppins',sans-serif;font-size:13px;font-weight:900;letter-spacing:-.02em;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -221,11 +224,11 @@ section{padding:96px 40px}
 .ci-o{background:rgba(255,107,79,.12)}.ci-p{background:rgba(237,161,240,.12)}.ci-g{background:rgba(16,185,129,.12)}
 .cr-ico svg{width:23px;height:23px}
 .ico-o{color:var(--o)}.ico-p{color:var(--pk)}.ico-g{color:var(--gr)}
-.cr-card h3{font-family:'Poppins',sans-serif;font-size:16px;font-weight:800;margin-bottom:9px}
+.cr-card h3{font-family:'Poppins',sans-serif;font-size:16px;font-weight:800;margin-bottom:16px}
 .cr-card p{font-family:'Poppins',sans-serif;font-size:13px;color:var(--m);line-height:1.68;margin-bottom:16px}
-.cr-card ul{list-style:none;display:flex;flex-direction:column;gap:7px}
-.cr-card li{display:flex;align-items:flex-start;gap:7px;font-family:'Poppins',sans-serif;font-size:12px;color:var(--m)}
-.cr-card li::before{content:'✓';font-weight:800;font-size:11px;color:var(--o);flex-shrink:0;margin-top:1px}
+.cr-card ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin-top:4px}
+.cr-card li{display:flex;align-items:flex-start;gap:8px;font-family:'Poppins',sans-serif;font-size:14px;color:var(--t);font-weight:500}
+.cr-card li::before{content:'✓';font-weight:800;font-size:13px;color:var(--o);flex-shrink:0;margin-top:1px}
 .cr-banner{background:var(--card);border:1px solid var(--b2);border-radius:var(--r);padding:36px 40px;display:flex;align-items:center;justify-content:space-between;gap:28px;background-image:radial-gradient(ellipse 50% 80% at 100% 50%,rgba(255,107,79,.06),transparent 70%)}
 .cr-banner h3{font-family:'Poppins',sans-serif;font-size:20px;font-weight:800;margin-bottom:7px}
 .cr-banner p{font-family:'Poppins',sans-serif;font-size:13px;color:var(--m);max-width:440px}
@@ -278,7 +281,7 @@ section{padding:96px 40px}
 footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28px}
 .foot{max-width:1100px;margin:0 auto}
 .foot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:48px;margin-bottom:44px;flex-wrap:wrap}
-.foot-brand{max-width:250px}.foot-brand svg{height:32px;width:auto;fill:white;margin-bottom:12px}.foot-brand p{font-family:'Poppins',sans-serif;font-size:13px;color:var(--m);line-height:1.7}
+.foot-brand{max-width:250px}.foot-brand svg{height:48px;width:auto;fill:white;margin-bottom:16px}.foot-brand p{font-family:'Poppins',sans-serif;font-size:13px;color:var(--m);line-height:1.7}
 .foot-cols{display:flex;gap:44px;flex-wrap:wrap}
 .foot-col h4{font-family:'Poppins',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--sub);margin-bottom:14px}
 .foot-col ul{list-style:none;display:flex;flex-direction:column;gap:9px}
@@ -361,7 +364,7 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
   <div class="glow g1"></div><div class="glow g2"></div>
   <div class="hero-grid">
     <div class="rv-l">
-      <div class="pill"><span class="dot"></span>Lancement au Nigéria 🇳🇬 — Rejoins la waitlist</div>
+      <div class="pill"><span class="dot"></span>Lancement au Nigéria 🇳🇬 · Rejoins la waitlist</div>
       <h1 class="h1">L'app qui<br/><span class="g">amplifie</span><br/>chaque son.</h1>
       <p class="hsub">Amply connecte les auditeurs, les créateurs et les marques dans un seul écosystème audio. Gagne des Amps en écoutant, propulse ton son et touche des audiences réellement engagées.</p>
       <form class="wl-form" onsubmit="joinWL(event)">
@@ -388,7 +391,7 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
         </a>
       </div>
-      <div class="sp"><div class="avs"><div class="av">V</div><div class="av">A</div><div class="av">M</div><div class="av">+</div></div><p class="sp-t"><strong>Les premiers croyants</strong> sont déjà là</p></div>
+      <div class="sp"><div class="avs"><div class="av">V</div><div class="av">A</div><div class="av">M</div><div class="av">+</div></div><p class="sp-t">Rejoins nos <strong>500+ premiers membres</strong></p></div>
     </div>
     <div class="phone-wrap rv-r">
       <div class="fb fb1">🎵 <span>+850 Amps</span> gagnés aujourd'hui</div>
@@ -402,11 +405,11 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
   <div class="inner">
     <div class="lst-g">
       <div class="rv-l">
-        <div class="sh"><div class="ey">Pour les auditeurs</div><h2 class="stitle">Écoute. Gagne.<br/><span class="gt">Sois récompensé.</span></h2><p class="ssub">Chaque pub audio entendue te rapporte des Amps. Découvre de nouveaux artistes, complète des sondages, et fais grossir ton portefeuille — juste en profitant de la musique.</p></div>
+        <div class="sh"><div class="ey">Pour les auditeurs</div><h2 class="stitle">Écoute. Gagne.<br/><span class="gt">Sois récompensé.</span></h2><p class="ssub">Écoute. Gagne des Amps. Sans rien changer à ta routine.</p></div>
         <div class="feat-list">
-          <div class="feat"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><div><h3>Écoutes récompensées</h3><p>Gagne des Amps pour chaque pub audio entendue — passivement, en profitant de la musique que tu aimes. Sans action supplémentaire.</p></div></div>
-          <div class="feat"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><div><h3>Découverte musicale</h3><p>Un feed curé d'artistes indépendants et émergents. Trouve ton prochain coup de cœur avant tout le monde et soutiens-les directement.</p></div></div>
-          <div class="feat"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div><h3>Extra Rewards — Offerwall</h3><p>Booste tes gains via notre offerwall : sondages audio, programmes de récompenses partenaires et plus encore. Plus de tâches, plus d'Amps.</p></div></div>
+          <div class="feat"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><div><h3>Écoutes récompensées</h3><p>Chaque audio sponsorisé te rapporte des Amps. Profites de la musique tout en gagnant !</p></div></div>
+          <div class="feat"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div><div><h3>Découverte musicale</h3><p>Un feed d'artistes indépendants et émergents. Trouve ton prochain coup de cœur avant tout le monde.</p></div></div>
+          <div class="feat"><div class="feat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div><h3>Extra Earnings</h3><p>Booste tes gains via notre offerwall : sondages audio, programmes de récompenses partenaires et plus encore. Plus de tâches, plus d'Amps.</p></div></div>
         </div>
       </div>
       <div class="rv-r" style="transition-delay:.15s">
@@ -417,7 +420,7 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
             <div class="bar-item"><div class="bar-top"><span class="bar-lbl">Sondages &amp; Offerwall</span><span class="bar-pct">35%</span></div><div class="bar-track"><div class="bar-fill" data-w="35"></div></div></div>
             <div class="bar-item"><div class="bar-top"><span class="bar-lbl">Bonus de parrainage</span><span class="bar-pct">10%</span></div><div class="bar-track"><div class="bar-fill" data-w="10"></div></div></div>
           </div>
-          <div class="plyz-note"><div class="plyz-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><p>Les <strong>Amps</strong> sont la monnaie in-app d'Amply — accumule-les et convertis-les en cash, cadeaux ou récompenses exclusives.</p></div>
+          <div class="plyz-note"><div class="plyz-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div><p>Les Amps sont la monnaie in-app d'Amply. Accumule-les et convertis-les en récompenses exclusives.</p></div>
         </div>
       </div>
     </div>
@@ -426,24 +429,24 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
 
 <section id="app">
   <div class="inner">
-    <div class="sh rv" style="max-width:520px"><div class="ey">L'Application</div><h2 class="stitle">Trois écrans.<br/><span class="gt">De vraies récompenses.</span></h2><p class="ssub">Amply est conçue autour de trois écrans précis — écoute et gagne des Amps, découvre comment les booster, et suis la valeur qu'ils débloquent.</p></div>
+    <div class="sh rv" style="max-width:520px"><div class="ey">L'Application</div><h2 class="stitle">Trois écrans.<br/><span class="gt">De vraies récompenses.</span></h2><p class="ssub">Amply s'articule autour de trois fonctions : un feed audio qui te rémunère à la seconde, des extras pour booster tes gains, et un programme de parrainage pour aller plus loin.</p></div>
     <div class="scr-g">
-      <div class="scr-card rv-pop"><div class="scr-img-wrap"><img src="../img/Amply_02_Home_Player_straight_transp.png" class="scr-img" alt="Accueil — Écoute" loading="lazy"/></div><div class="scr-info"><div class="scr-n">Page 01</div><h3>Accueil — Écoute</h3><p>Ton feed audio personnel. Écoute de la musique et gagne des Amps automatiquement à chaque audio sponsorisé — juste en écoutant.</p></div></div>
-      <div class="scr-card rv-pop" style="transition-delay:.09s"><div class="scr-img-wrap"><img src="../img/Amply_04_Extra_Earnings_straight_transp.png" class="scr-img" alt="Gagner — Plus d'Amps" loading="lazy"/></div><div class="scr-info"><div class="scr-n">Page 02</div><h3>Gagner — Plus d'Amps</h3><p>Booste tes gains au-delà de l'écoute passive. Complète des sondages partenaires, réponds à des audio surveys et débloque des offres Easy Amps.</p></div></div>
-      <div class="scr-card rv-pop" style="transition-delay:.18s"><div class="scr-img-wrap"><img src="../img/Amply_05_Wallet_straight_transp.png" class="scr-img" alt="Wallet — Tout suivre" loading="lazy"/></div><div class="scr-info"><div class="scr-n">Page 03</div><h3>Wallet — Tout suivre</h3><p>Ton solde Amps en un coup d'œil. Graphique hebdomadaire, journal d'activité complet, et accès direct à tes récompenses et vouchers.</p></div></div>
+      <div class="scr-card rv-pop"><div class="scr-img-wrap"><img src="../img/Amply_02_Home_Player_straight_transp.png" class="scr-img" alt="Feed audio" loading="lazy"/></div><div class="scr-info"><h3>Feed audio</h3><p>Une playlist qui te rémunère à la seconde d'écoute.</p></div></div>
+      <div class="scr-card rv-pop" style="transition-delay:.09s"><div class="scr-img-wrap"><img src="../img/Amply_04_Extra_Earnings_straight_transp.png" class="scr-img" alt="Extra earnings" loading="lazy"/></div><div class="scr-info"><h3>Extra earnings</h3><p>Des sondages et offres spéciales.</p></div></div>
+      <div class="scr-card rv-pop" style="transition-delay:.18s"><div class="scr-img-wrap"><img src="../img/Amply_07_Referral_straight_transp.png" class="scr-img" alt="Parrainage" loading="lazy"/></div><div class="scr-info"><h3>Parrainage</h3><p>Invite pour booster tes gains.</p></div></div>
     </div>
   </div>
 </section>
 
 <section id="creators">
   <div class="inner">
-    <div class="sh rv"><div class="ey">Pour les créateurs</div><h2 class="stitle">Ton son mérite<br/><span class="gt">d'être entendu.</span></h2><p class="ssub">Amply donne aux artistes et aux marques des outils puissants pour promouvoir leur son, placer leur contenu devant des auditeurs engagés et comprendre leur audience en profondeur.</p></div>
+    <div class="sh rv"><div class="ey">Pour les créateurs</div><h2 class="stitle">Ton son mérite<br/><span class="gt">d'être entendu.</span></h2><p class="ssub">Amply est conçue pour amplifier ta visibilité. Lance une campagne audio ciblée, place ton son dans le feed et mesure ce qui résonne avec ton audience.</p></div>
     <div class="cr-g">
-      <div class="cr-card cc-a rv-pop"><div class="cr-ico ci-o"><svg class="ico-o" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5.882V19.24a1.76 1.76 0 0 1-3.417.592l-2.147-6.15M18 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6.93 8.72 4.6 7.4A2 2 0 0 0 2 9.17v5.66a2 2 0 0 0 2.6 1.77l2.33-1.32"/></svg></div><h3>Promotion Audio</h3><p>Lance des campagnes audio ciblées qui mettent ton son directement dans les oreilles des auditeurs. Ciblage précis par genre, ville, âge et comportement d'écoute.</p><ul><li>Ciblage démographique et par intérêts</li><li>Budget flexible, dès le premier jour</li><li>Dashboard analytique en temps réel</li><li>Accès aux outils Amply Pro</li></ul></div>
-      <div class="cr-card cc-b rv-pop" style="transition-delay:.09s"><div class="cr-ico ci-p"><svg class="ico-p" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3>Affiliation In-App</h3><p>Obtiens un placement visuel dans Amply. Redirige les utilisateurs vers ton profil artiste, ta dernière sortie ou ton site web — directement depuis le feed de l'app.</p><ul><li>Bannières visuelles dans l'app</li><li>Redirection vers profil artiste ou URL externe</li><li>Les marques présentent leurs produits et services</li><li>Suivi des impressions et des clics</li></ul></div>
-      <div class="cr-card cc-c rv-pop" style="transition-delay:.18s"><div class="cr-ico ci-g"><svg class="ico-g" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Sondages &amp; Insights</h3><p>Pose les bonnes questions à ta vraie audience. Teste un son avant la sortie, choisis ton prochain clip, mesure l'impact d'un drop.</p><ul><li>Sondages audio interactifs</li><li>Tests A/B de morceaux</li><li>Rapports audience détaillés</li><li>Segmentation audience avancée</li></ul></div>
+      <div class="cr-card cc-a rv-pop"><div class="cr-ico ci-o"><svg class="ico-o" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5.882V19.24a1.76 1.76 0 0 1-3.417.592l-2.147-6.15M18 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6.93 8.72 4.6 7.4A2 2 0 0 0 2 9.17v5.66a2 2 0 0 0 2.6 1.77l2.33-1.32"/></svg></div><h3>Promotion Audio</h3><ul><li>Campagnes audio ciblées et précises</li><li>Budget flexible</li><li>Dashboard analytique en temps réel</li><li>Accès aux outils Amply Pro</li></ul></div>
+      <div class="cr-card cc-b rv-pop" style="transition-delay:.09s"><div class="cr-ico ci-p"><svg class="ico-p" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3>Affiliation In-App</h3><ul><li>Bannières visuelles in-app</li><li>Lien vers ton profil artiste ou site</li><li>Suivi des impressions et des clics</li></ul></div>
+      <div class="cr-card cc-c rv-pop" style="transition-delay:.18s"><div class="cr-ico ci-g"><svg class="ico-g" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Sondages &amp; Insights</h3><ul><li>Sondages audio interactifs</li><li>Tests A/B de morceaux</li><li>Rapports audience détaillés</li><li>Segmentation avancée</li></ul></div>
     </div>
-    <div class="cr-banner rv"><div><h3>Prêt à lancer ta première campagne ?</h3><p>Rejoins la waitlist créateurs et sois parmi les premiers à accéder aux outils Amply Pro au lancement — avec des tarifs early bird garantis.</p></div><a href="#hero" class="btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>Rejoindre la waitlist<span class="btn-bars"><span class="ab" style="animation-duration:.75s;height:35%"></span><span class="ab" style="animation-duration:.95s;height:75%"></span><span class="ab" style="animation-duration:.80s;height:55%"></span><span class="ab" style="animation-duration:1.15s;height:90%"></span></span></a></div>
+    <div class="cr-banner rv"><div><h3>Prêt à lancer ta première campagne ?</h3><p>Rejoins la waitlist créateurs et sois parmi les premiers à accéder aux outils Amply Pro au lancement, avec des tarifs early bird garantis.</p></div><a href="#hero" class="btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>Rejoindre la waitlist<span class="btn-bars"><span class="ab" style="animation-duration:.75s;height:35%"></span><span class="ab" style="animation-duration:.95s;height:75%"></span><span class="ab" style="animation-duration:.80s;height:55%"></span><span class="ab" style="animation-duration:1.15s;height:90%"></span></span></a></div>
   </div>
 </section>
 
@@ -451,9 +454,9 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
   <div class="inner">
     <div class="sh rv"><div class="ey">Comment ça marche</div><h2 class="stitle">Un modèle<br/><span class="gt">gagnant × 3.</span></h2><p class="ssub">Amply aligne les intérêts des auditeurs, des créateurs et des annonceurs dans un modèle unique, cohérent et durable.</p></div>
     <div class="flow rv">
-      <h3 class="flow-t">Du lancement à la croissance — en 5 étapes</h3>
+      <h3 class="flow-t">Du lancement à la croissance, en 5 étapes</h3>
       <div class="flow-steps">
-        <div class="fs rv-l"><div class="fc">1</div><h4>Le créateur lance sa campagne</h4><p>Budget, ciblage, durée — configuré en quelques minutes.</p></div>
+        <div class="fs rv-l"><div class="fc">1</div><h4>Le créateur lance sa campagne</h4><p>Budget, ciblage, durée. Configuré en quelques minutes.</p></div>
         <div class="fs rv-l" style="transition-delay:.10s"><div class="fc">2</div><h4>Amply distribue l'audio</h4><p>Le spot atteint exactement le profil d'auditeur ciblé.</p></div>
         <div class="fs rv-l" style="transition-delay:.20s"><div class="fc">3</div><h4>L'auditeur gagne des Amps</h4><p>Chaque écoute validée génère des Amps.</p></div>
         <div class="fs rv-l" style="transition-delay:.30s"><div class="fc">4</div><h4>Le créateur progresse</h4><p>Les sons tournent, les sondages engagent, les revenus croissent.</p></div>
@@ -470,25 +473,25 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
       <a href="amply-creative-brief.html" class="tool-c rv-pop">
         <div class="tool-top"><div class="tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div><span class="tool-bdg">Créatif</span></div>
         <div class="tool-n">Make My Jingle</div>
-        <div class="tool-d">Crée un brief audio professionnel étape par étape. Ton, message clé, persona, format — structuré et prêt pour ton équipe créative en quelques minutes.</div>
+        <div class="tool-d">Décris ton projet, nos spécialistes créent ton jingle sur mesure. Un audio pro, conçu pour toi, prêt à diffuser sur Amply.</div>
         <div class="tool-f"><div class="tags"><span class="tag">Stratégie</span><span class="tag">Audio</span></div><div class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </a>
       <a href="amply-reach-estimator.html" class="tool-c rv-pop" style="transition-delay:.09s">
         <div class="tool-top"><div class="tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><span class="tool-bdg">Analytics</span></div>
         <div class="tool-n">Plan My Campaign</div>
-        <div class="tool-d">Projette la portée de ta campagne avant de dépenser un naira. Auditeurs uniques, impressions, fréquence — basé sur de vraies données d'audience Amply.</div>
+        <div class="tool-d">Simule ta campagne et soumets la ! Auditeurs uniques, impressions, fréquence par jour, durée. Un tarif précis et un démarrage rapide.</div>
         <div class="tool-f"><div class="tags"><span class="tag">Portée</span><span class="tag">Data</span></div><div class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </a>
       <a href="amply-package-builder.html" class="tool-c rv-pop" style="transition-delay:.18s">
         <div class="tool-top"><div class="tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div><span class="tool-bdg">Offres</span></div>
         <div class="tool-n">Package Offers</div>
-        <div class="tool-d">Construis des packages de campagne sur mesure pour tes clients. Combine formats, durées et options de ciblage en une offre attractive prête à pitcher.</div>
+        <div class="tool-d">Des packages audio déjà pensés pour une efficacité maximale. Choisis ton format, lance en quelques clics.</div>
         <div class="tool-f"><div class="tags"><span class="tag">Vente</span><span class="tag">Offres</span></div><div class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
       </a>
       <a href="#" class="tool-c tool-soon rv" style="transition-delay:.3s">
         <div class="tool-top"><div class="tool-ico" style="background:rgba(237,161,240,.08)"><svg viewBox="0 0 24 24" fill="none" stroke="#EDA1F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div><span class="tool-bdg" style="color:#EDA1F0;border-color:rgba(237,161,240,.3);background:rgba(237,161,240,.08)">Bientôt</span></div>
         <div class="tool-n" style="color:var(--m)">Plus d'outils à venir</div>
-        <div class="tool-d">Constructeur de sondages artistes, dashboard affiliés, tracker de campagnes et plus — tout arrive bientôt sur Amply Pro.</div>
+        <div class="tool-d">Constructeur de sondages artistes, dashboard affiliés, tracker de campagnes et plus. Tout arrive bientôt sur Amply Pro.</div>
         <div class="tool-f"><div class="tags"><span class="tag">Bientôt</span></div></div>
       </a>
     </div>
@@ -501,7 +504,7 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
       <div class="rv">
         <div class="ey">Contact</div>
         <h2 class="c-title">Parlons de<br/><span class="gt">ton projet.</span></h2>
-        <p class="c-sub">Que tu sois une marque, un créateur ou simplement curieux à propos d'Amply — on serait ravis de te lire. On répond sous 24h.</p>
+        <p class="c-sub">Que tu sois une marque, un créateur ou simplement curieux à propos d'Amply, on serait ravis de te lire. On répond sous 24h.</p>
         <div class="c-links">
           <a href="mailto:hello@amplyhub.com" class="c-lnk"><div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="c-lbl">Email</div><div class="c-val">hello@amplyhub.com</div></div></a>
           <a href="https://instagram.com/amplyhub" target="_blank" class="c-lnk"><div class="c-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div><div><div class="c-lbl">Instagram</div><div class="c-val">@amplyhub</div></div></a>
