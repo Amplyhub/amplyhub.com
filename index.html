@@ -53,7 +53,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(15,5,25,.9);
 .h1{font-family:'Poppins',sans-serif;font-size:clamp(36px,5vw,60px);font-weight:900;letter-spacing:-.03em;line-height:1.08;margin-bottom:18px}
 .h1 .g{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hsub{font-family:'Poppins',sans-serif;font-size:15px;color:var(--m);line-height:1.78;max-width:460px;margin-bottom:32px}
-.wl-form{display:flex;gap:10px;flew-wrap:wrap;margin-bottom:12px}
+.wl-form{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
 .wl-in{flex:1;min-width:200px;background:var(--card2);border:1px solid var(--b2);border-radius:50px;padding:13px 22px;font-family:'Poppins',sans-serif;font-size:14px;color:var(--t);outline:none;transition:border-color .2s,box-shadow .2s}
 .wl-in::placeholder{color:var(--sub)}.wl-in:focus{border-color:var(--o);box-shadow:0 0 0 3px rgba(255,107,79,.12)}
 .btn{display:inline-flex;align-items:center;gap:8px;background:var(--grad);color:white;font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;padding:13px 26px;border-radius:50px;border:none;cursor:pointer;transition:opacity .2s,transform .2s;white-space:nowrap}
@@ -108,7 +108,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(15,5,25,.9);
 .ph-rn{font-family:'Poppins',sans-serif;font-size:10px;font-weight:700;color:var(--t)}
 .ph-rs{font-family:'Poppins',sans-serif;font-size:8px;color:var(--m);margin-top:1px}
 .ph-rb{flex-shrink:0;font-family:'Poppins',sans-serif;font-size:8px;font-weight:700;color:var(--o);background:rgba(255,107,79,.1);border-radius:6px;padding:3px 7px;white-space:nowrap}
-/* AMPLY BRAND WAVE â scaleY animation preserves shape integrity */
+/* AMPLY BRAND WAVE — scaleY animation preserves shape integrity */
 .amply-wave{height:40px;display:flex;align-items:flex-end;justify-content:center;gap:4px;padding:0 4px;overflow:visible}
 .aw{width:8px;flex-shrink:0;border-radius:0 50% 0 50%;transform-origin:bottom center;animation:awa 1s ease-in-out infinite alternate}
 .aw-grad{background:linear-gradient(180deg,#EDA1F0 0%,#FF6B4F 100%)}
@@ -250,7 +250,7 @@ section{padding:96px 40px}
 .cr-card p{font-family:'Poppins',sans-serif;font-size:13px;color:var(--m);line-height:1.68;margin-bottom:16px}
 .cr-card ul{list-style:none;display:flex;flex-direction:column;gap:11px;margin-top:4px}
 .cr-card li{display:flex;align-items:flex-start;gap:8px;font-family:'Poppins',sans-serif;font-size:14px;color:var(--t);font-weight:500}
-.cr-card li::before{content:'â';font-weight:800;font-size:13px;color:var(--o);flex-shrink:0;margin-top:1px}
+.cr-card li::before{content:'✓';font-weight:800;font-size:13px;color:var(--o);flex-shrink:0;margin-top:1px}
 .cr-banner{background:var(--card);border:1px solid var(--b2);border-radius:var(--r);padding:36px 40px;display:flex;align-items:center;justify-content:space-between;gap:28px;background-image:radial-gradient(ellipse 50% 80% at 100% 50%,rgba(255,107,79,.06),transparent 70%)}
 .cr-banner h3{font-family:'Poppins',sans-serif;font-size:20px;font-weight:800;margin-bottom:7px}
 .cr-banner p{font-family:'Poppins',sans-serif;font-size:13px;color:var(--m);max-width:440px}
@@ -347,7 +347,7 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
   .tools-g{grid-template-columns:repeat(2,1fr)}
   .flow-steps{flex-direction:column;align-items:center;gap:20px}.flow-steps::before{display:none}.fs{width:100%;max-width:360px}
   .cr-banner{flex-direction:column;text-align:center}
-  section{padding:64px 20py}#hero{padding:84px 20px 60px}.flow{padding:28px 20px}
+  section{padding:64px 20px}#hero{padding:84px 20px 60px}.flow{padding:28px 20px}
   .foot-top{flex-direction:column}.foot-cols{gap:28px}
   .btn-bars{display:none}
 }
@@ -403,7 +403,7 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
   <div class="glow g1"></div><div class="glow g2"></div>
   <div class="hero-grid">
     <div class="rv-l">
-      <div class="pill"><span class="dot"></span>Launching in Nigeria ð³ð¬ Â· Join the waitlist</div>
+      <div class="pill"><span class="dot"></span>Launching in Nigeria 🇳🇬 · Join the waitlist</div>
       <h1 class="h1">The app that<br/><span class="g">amplifies</span><br/>every sound.</h1>
       <p class="hsub">Amply connects listeners, creators and brands in one audio ecosystem. Earn Amps by listening, promote your sound, and reach genuinely engaged audiences.</p>
       <form class="wl-form" onsubmit="joinWL(event)">
@@ -419,7 +419,7 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
           </span>
         </button>
       </form>
-      <div class="wl-ok" id="wlOk">ð You're on the list! We'll reach out as soon as we launch.</div>
+      <div class="wl-ok" id="wlOk">🎉 You're on the list! We'll reach out as soon as we launch.</div>
       <p class="no-spam">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         No spam. Just the real news, at the right time.
@@ -433,8 +433,8 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
       <div class="sp"><div class="avs"><div class="av">V</div><div class="av">A</div><div class="av">M</div><div class="av">+</div></div><p class="sp-t">Join our <strong>500+ first members</strong></p></div>
     </div>
     <div class="phone-wrap rv-r">
-      <div class="fb fb1">ðµ <span>+850 Amps</span> earned today</div>
-      <div class="fb fb2">ð¢ Campaign <span>live</span></div>
+      <div class="fb fb1">🎵 <span>+850 Amps</span> earned today</div>
+      <div class="fb fb2">📢 Campaign <span>live</span></div>
       <div class="ph"><img src="img/Amply_02_Home_Player_tilt_transp.png" class="ph-img" alt="Amply app" loading="eager"/></div>
     </div>
   </div>
@@ -454,7 +454,7 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
       </div>
       <div class="rv-r" style="transition-delay:.15s">
         <div class="earn-card">
-          <div class="earn-hook"><div class="earn-big">â¦50,000</div><p class="earn-sub">earned per month by our <span>top listeners</span></p></div>
+          <div class="earn-hook"><div class="earn-big">₦50,000</div><p class="earn-sub">earned per month by our <span>top listeners</span></p></div>
           <div class="bars">
             <div class="bar-item"><div class="bar-top"><span class="bar-lbl">Audio Ads</span><span class="bar-pct">55%</span></div><div class="bar-track"><div class="bar-fill" data-w="55"></div></div></div>
             <div class="bar-item"><div class="bar-top"><span class="bar-lbl">Surveys &amp; Offerwall</span><span class="bar-pct">35%</span></div><div class="bar-track"><div class="bar-fill" data-w="35"></div></div></div>
@@ -484,7 +484,7 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
   <div class="inner">
     <div class="sh rv"><div class="ey">For Creators</div><h2 class="stitle">Your sound deserves<br/><span class="gt">to be heard.</span></h2><p class="ssub">Amply is designed to amplify your visibility. Launch a targeted audio campaign, place your sound in the feed and measure what resonates with your audience.</p></div>
     <div class="cr-g">
-      <div class="cr-card cc-a rv-pop"><div class="cr-ico ci-o"><svg class="ico-o" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5.882V19.24a1.76 1.76 0 0 1-3.417.592l-2.147-6.15M18 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6.93 8.72 4.6 7.4A2 2 0 0 0 2 9.17v5.66a2 2 0 0 0 2.6 1.77l1.33-1.32"/></svg></div><h3>Audio Promotion</h3><ul><li>Targeted and precise audio campaigns</li><li>Flexible budget</li><li>Real-time analytics dashboard</li><li>Access to Amply Pro tools</li></ul></div>
+      <div class="cr-card cc-a rv-pop"><div class="cr-ico ci-o"><svg class="ico-o" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5.882V19.24a1.76 1.76 0 0 1-3.417.592l-2.147-6.15M18 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6.93 8.72 4.6 7.4A2 2 0 0 0 2 9.17v5.66a2 2 0 0 0 2.6 1.77l2.33-1.32"/></svg></div><h3>Audio Promotion</h3><ul><li>Targeted and precise audio campaigns</li><li>Flexible budget</li><li>Real-time analytics dashboard</li><li>Access to Amply Pro tools</li></ul></div>
       <div class="cr-card cc-b rv-pop" style="transition-delay:.09s"><div class="cr-ico ci-p"><svg class="ico-p" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3>In-App Affiliation</h3><ul><li>In-app visual banners</li><li>Link to your artist profile or site</li><li>Impression and click tracking</li></ul></div>
       <div class="cr-card cc-c rv-pop" style="transition-delay:.18s"><div class="cr-ico ci-g"><svg class="ico-g" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Surveys &amp; Insights</h3><ul><li>Interactive audio surveys</li><li>A/B track testing</li><li>Detailed audience reports</li><li>Advanced segmentation</li></ul></div>
     </div>
@@ -565,7 +565,7 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
           <div class="fg"><label class="fl">Message</label><textarea class="fta" placeholder="Tell us everything..." required></textarea></div>
           <button type="submit" class="btn" style="width:100%;justify-content:center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2L15 22 11 13 2 9l20-7z"/></svg>Send message</button>
         </form>
-        <div id="c-ok">â Message sent! We'll get back to you within 24 hours.</div>
+        <div id="c-ok">✅ Message sent! We'll get back to you within 24 hours.</div>
       </div>
     </div>
   </div>
@@ -588,7 +588,7 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
         <div class="foot-col"><h4>Company</h4><ul><li><a href="#contact">Contact</a></li><li><a href="mailto:hello@amplyhub.com">hello@amplyhub.com</a></li><li><a href="#">Legal notice</a></li><li><a href="#">Privacy policy</a></li></ul></div>
       </div>
     </div>
-    <div class="foot-bot"><p>Â© 2025 AmplyHub. All rights reserved.</p><div class="foot-leg"><a href="#">Legal</a><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+    <div class="foot-bot"><p>© 2025 AmplyHub. All rights reserved.</p><div class="foot-leg"><a href="#">Legal</a><a href="#">Privacy</a><a href="#">Terms</a></div></div>
   </div>
 </footer>
 
