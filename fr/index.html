@@ -547,7 +547,7 @@ footer{background:var(--s1);border-top:1px solid var(--b1);padding:52px 40px 28p
 </footer>
 
 <script>
-function joinWL(e){e.preventDefault();document.querySelector('.wl-form').style.display='none';document.querySelector('.no-spam').style.display='none';document.querySelector('.creator-cta').style.display='none';document.getElementById('wlOk').style.display='block'}
+async function joinWL(e){e.preventDefault();const email=document.getElementById('wlEmail').value.trim();const btn=e.target.querySelector('button[type="submit"]');btn.disabled=true;btn.style.opacity='.6';try{const r=await fetch('https://amplyhub.app.n8n.cloud/webhook/amplyhub-waitlist',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email})});if(r.ok){document.querySelector('.wl-form').style.display='none';document.querySelector('.no-spam').style.display='none';const cc=document.querySelector('.creator-cta');if(cc)cc.style.display='none';document.getElementById('wlOk').style.display='block';}else{btn.disabled=false;btn.style.opacity='1';}}catch(err){btn.disabled=false;btn.style.opacity='1';}}
 function handleC(e){e.preventDefault();e.target.style.display='none';document.getElementById('c-ok').style.display='block'}
 function toggleMM(){document.getElementById('mm').classList.toggle('open')}
 function closeMM(){document.getElementById('mm').classList.remove('open')}
